@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,500&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.darkMode {
+  background-color: #202c36;
+}
+.colorWhite {
+  color: #fff;
+}
+header {
+  background: #fff;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.06);
+  nav {
+    display: flex;
+    justify-content: space-between;
+    .nav-left {
+      h1 {
+        color: #111517;
+        font-family: Nunito Sans;
+        font-size: 24px;
+        font-weight: 800;
+      }
+    }
+    .nav-right {
+      h1 {
+        color: #111517;
+        font-family: Nunito Sans;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        svg {
+          margin-bottom: -5px;
+          margin-right: 4px;
+        }
+      }
+    }
+  }
+}
+main {
+  background-color: #fafafa;
+  height: 100%;
+  padding: 50px 0;
+  .main-top {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    .search-box {
+      svg {
+        position: absolute;
+        top: 35%;
+        left: 4.5%;
+        width: 20px;
+      }
+      input {
+        border-radius: 5px;
+        background: #fff;
+        box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.05);
+        width: 350px;
+        padding: 6px 45px;
+        outline: none;
+        border: none;
+        height: 35px;
+      }
+    }
+    .select-box {
+      select {
+        padding: 15px;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.05);
+      }
+    }
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    .card {
+      border: 1px solid #000;
+      padding: 20px;
+      img {
+        width: 200px;
+      }
+    }
+  }
+}
